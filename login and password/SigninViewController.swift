@@ -59,15 +59,17 @@ class SigninViewController: UIViewController {
                     formatter.dateFormat = "dd.MM.yyyy.HH.mm.ss"
                     let created = formatter.string(from: date)
                     let loginTime = created
-                    
+                    Singleton.userAuthID = result!.user.uid
                     let db = Firestore.firestore()
                     db.collection("users").addDocument(data: [
                         "firstname": self.firstNameTextField.text!,
                         "last": self.lastNameTextField.text!,
-                        "uid": result!.user.uid,
+                        "uid": Singleton.userAuthID,
+                        
                         "created": created,
                         "loginTime": loginTime,
-                        "email": self.emailTextField.text!
+                        "email": self.emailTextField.text!,
+                        "status": "unblock"
                         
                     ]) { (error) in
                         if error != nil {

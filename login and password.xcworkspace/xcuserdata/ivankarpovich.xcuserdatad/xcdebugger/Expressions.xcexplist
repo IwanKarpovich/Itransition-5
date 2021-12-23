@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "mach_msg_trap:(null)">
+         <PersistentStrings>
+            <PersistentString
+               value = "userStatuses">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "Page2ViewController.removeMessage(index:):Page2ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "specialized closure #1 in Page2ViewController.blockUser(index:currentStatus:):Page2ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #2 in Page2ViewController.tableView(_:trailingSwipeActionsConfigurationForRowAt:):Page2ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in closure #2 in Page2ViewController.tableView(_:trailingSwipeActionsConfigurationForRowAt:):Page2ViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in PageViewController.tableView(_:cellForRowAt:):PageViewController.swift">
+      </ContextState>
+      <ContextState
+         contextName = "closure #1 in Page2ViewController.tableView(_:trailingSwipeActionsConfigurationForRowAt:):Page2ViewController.swift">
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
