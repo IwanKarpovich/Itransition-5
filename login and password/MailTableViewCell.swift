@@ -12,6 +12,8 @@ class MailTableViewCell: UITableViewCell {
     @IBOutlet weak var Nameuser: UILabel!
     @IBOutlet weak var Statususer: UILabel!
     @IBOutlet weak var Textuser: UILabel!
+    @IBOutlet weak var TextuserCreate: UILabel!
+    @IBOutlet weak var TextuserLastLogin: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

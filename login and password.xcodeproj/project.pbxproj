@@ -52,6 +52,7 @@
 		0B03F2C7CB1F34E377566478 /* Pods-login and passwordTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login and passwordTests.debug.xcconfig"; path = "Target Support Files/Pods-login and passwordTests/Pods-login and passwordTests.debug.xcconfig"; sourceTree = "<group>"; };
 		258C60502C2FD5A4C911B995 /* Pods_login_and_password.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_login_and_password.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F97DED196456C46AA3626F /* Pods-login and password-login and passwordUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login and password-login and passwordUITests.release.xcconfig"; path = "Target Support Files/Pods-login and password-login and passwordUITests/Pods-login and password-login and passwordUITests.release.xcconfig"; sourceTree = "<group>"; };
+		4D26C3782775DB5300F16D70 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		4D3D6D2A2773ABA30086B1DF /* MailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTableViewCell.swift; sourceTree = "<group>"; };
 		4D3D6D2B2773ABA30086B1DF /* MailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailTableViewCell.xib; sourceTree = "<group>"; };
 		4D3D6D2E2773CB210086B1DF /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
@@ -112,6 +113,7 @@
 		4D95FE76276FB31B00BE4A18 = {
 			isa = PBXGroup;
 			children = (
+				4D26C3782775DB5300F16D70 /* README.md */,
 				4D95FE81276FB31B00BE4A18 /* login and password */,
 				4D95FE98276FB31D00BE4A18 /* login and passwordTests */,
 				4D95FEA2276FB31D00BE4A18 /* login and passwordUITests */,

@@ -131,7 +131,7 @@
                     <navigationItem key="navigationItem" id="cCQ-SF-iEw"/>
                     <connections>
                         <outlet property="emailTextField" destination="lK4-dh-fq9" id="a1D-0w-WJP"/>
-                        <outlet property="errorLabel" destination="aJ6-YS-yjY" id="SsA-7p-Jzt"/>
+                        <outlet property="errorLabel" destination="aJ6-YS-yjY" id="Wsw-CC-dsA"/>
                         <outlet property="firstNameTextField" destination="ZNG-oD-rdh" id="s1t-dS-GjP"/>
                         <outlet property="lastNameTextField" destination="7KA-ic-kRO" id="f13-bU-Uct"/>
                         <outlet property="passwordtextField" destination="T0T-MG-4Ep" id="rZO-x9-HRp"/>
@@ -150,7 +150,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="428" height="926"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="500" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPi-WU-d87">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" verticalHuggingPriority="500" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="145" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UPi-WU-d87">
                                 <rect key="frame" x="0.0" y="44" width="428" height="848"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <inset key="scrollIndicatorInsets" minX="0.0" minY="2" maxX="0.0" maxY="0.0"/>
@@ -243,7 +243,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="W8g-U6-Qaz"/>
                     <connections>
-                        <outlet property="ErrorLabel" destination="Q3z-j3-JE7" id="J2h-Sf-M7s"/>
+                        <outlet property="ErrorLabel" destination="Q3z-j3-JE7" id="t9O-4b-lau"/>
                         <outlet property="button" destination="3Og-e1-Qvu" id="V7b-03-KdP"/>
                         <outlet property="login" destination="ZlP-3g-mIO" id="W0B-r0-fDX"/>
                         <outlet property="password" destination="hXK-hn-PKv" id="Skg-YP-9d8"/>

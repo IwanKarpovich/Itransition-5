@@ -160,9 +160,11 @@ extension UsersListViewController: UITableViewDataSource {
     func tableView (_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellId) as! MailTableViewCell
-        cell.Nameuser.text = users[indexPath.row].firstName + users[indexPath.row].lastName
+        cell.Nameuser.text = users[indexPath.row].firstName + " " + users[indexPath.row].lastName
         cell.Statususer.text = users[indexPath.row].status
         cell.Textuser.text = users[indexPath.row].email
+        cell.TextuserCreate.text = "Registration Date" + users[indexPath.row].createdAt
+        cell.TextuserLastLogin.text = "Last login Date" + users[indexPath.row].lastLoginTime
         
         return cell
     }
