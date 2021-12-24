@@ -11,6 +11,7 @@
 		4D3D6D2C2773ABA30086B1DF /* MailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D6D2A2773ABA30086B1DF /* MailTableViewCell.swift */; };
 		4D3D6D2D2773ABA30086B1DF /* MailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D3D6D2B2773ABA30086B1DF /* MailTableViewCell.xib */; };
 		4D3D6D2F2773CB210086B1DF /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D6D2E2773CB210086B1DF /* AuthModel.swift */; };
+		4D3D6D31277401C00086B1DF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D3D6D30277401C00086B1DF /* User.swift */; };
 		4D95FE83276FB31B00BE4A18 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FE82276FB31B00BE4A18 /* AppDelegate.swift */; };
 		4D95FE85276FB31B00BE4A18 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FE84276FB31B00BE4A18 /* SceneDelegate.swift */; };
 		4D95FE87276FB31B00BE4A18 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FE86276FB31B00BE4A18 /* ViewController.swift */; };
@@ -22,10 +23,9 @@
 		4D95FEA6276FB31D00BE4A18 /* login_and_passwordUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FEA5276FB31D00BE4A18 /* login_and_passwordUITestsLaunchTests.swift */; };
 		4D95FEB3276FB60F00BE4A18 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D95FEB2276FB60F00BE4A18 /* GoogleService-Info.plist */; };
 		4D95FEBD276FC9D500BE4A18 /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FEBC276FC9D500BE4A18 /* AuthViewController.swift */; };
-		4D95FEBF276FC9EB00BE4A18 /* SigninViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FEBE276FC9EB00BE4A18 /* SigninViewController.swift */; };
-		4D95FEC3276FCA2500BE4A18 /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FEC2276FCA2500BE4A18 /* PageViewController.swift */; };
-		4D961320277202C6008AF4A9 /* Page2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96131F277202C6008AF4A9 /* Page2ViewController.swift */; };
-		4DD30B6E277145FC0000C23E /* login2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD30B6D277145FC0000C23E /* login2ViewController.swift */; };
+		4D95FEBF276FC9EB00BE4A18 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D95FEBE276FC9EB00BE4A18 /* SignUpViewController.swift */; };
+		4D961320277202C6008AF4A9 /* UsersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D96131F277202C6008AF4A9 /* UsersListViewController.swift */; };
+		4DD30B6E277145FC0000C23E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4DD30B6D277145FC0000C23E /* SignInViewController.swift */; };
 		AB291390C51765B9722DCFBF /* Pods_login_and_password_login_and_passwordUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3478C85F081F90BC255A566 /* Pods_login_and_password_login_and_passwordUITests.framework */; };
 		E80A831EF2CCF49DAB2ACC40 /* Pods_login_and_password.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 258C60502C2FD5A4C911B995 /* Pods_login_and_password.framework */; };
 /* End PBXBuildFile section */
@@ -55,6 +55,7 @@
 		4D3D6D2A2773ABA30086B1DF /* MailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MailTableViewCell.swift; sourceTree = "<group>"; };
 		4D3D6D2B2773ABA30086B1DF /* MailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MailTableViewCell.xib; sourceTree = "<group>"; };
 		4D3D6D2E2773CB210086B1DF /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		4D3D6D30277401C00086B1DF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		4D95FE7F276FB31B00BE4A18 /* login and password.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "login and password.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D95FE82276FB31B00BE4A18 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4D95FE84276FB31B00BE4A18 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,10 +71,9 @@
 		4D95FEA5276FB31D00BE4A18 /* login_and_passwordUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login_and_passwordUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		4D95FEB2276FB60F00BE4A18 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		4D95FEBC276FC9D500BE4A18 /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		4D95FEBE276FC9EB00BE4A18 /* SigninViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SigninViewController.swift; sourceTree = "<group>"; };
-		4D95FEC2276FCA2500BE4A18 /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
-		4D96131F277202C6008AF4A9 /* Page2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Page2ViewController.swift; sourceTree = "<group>"; };
-		4DD30B6D277145FC0000C23E /* login2ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = login2ViewController.swift; sourceTree = "<group>"; };
+		4D95FEBE276FC9EB00BE4A18 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		4D96131F277202C6008AF4A9 /* UsersListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UsersListViewController.swift; sourceTree = "<group>"; };
+		4DD30B6D277145FC0000C23E /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		4EF0C3222F4FEAC1013D8F93 /* Pods-login and password-login and passwordUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login and password-login and passwordUITests.debug.xcconfig"; path = "Target Support Files/Pods-login and password-login and passwordUITests/Pods-login and password-login and passwordUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		70ADD2BC4C8F60AFB1EA99A5 /* Pods-login and password.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-login and password.debug.xcconfig"; path = "Target Support Files/Pods-login and password/Pods-login and password.debug.xcconfig"; sourceTree = "<group>"; };
 		C0C54A0505725E9221007E06 /* Pods_login_and_passwordTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_login_and_passwordTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,10 +139,10 @@
 				4D95FE86276FB31B00BE4A18 /* ViewController.swift */,
 				4D95FEBC276FC9D500BE4A18 /* AuthViewController.swift */,
 				4D95FE88276FB31B00BE4A18 /* Main.storyboard */,
-				4D95FEBE276FC9EB00BE4A18 /* SigninViewController.swift */,
-				4DD30B6D277145FC0000C23E /* login2ViewController.swift */,
-				4D96131F277202C6008AF4A9 /* Page2ViewController.swift */,
-				4D95FEC2276FCA2500BE4A18 /* PageViewController.swift */,
+				4D95FEBE276FC9EB00BE4A18 /* SignUpViewController.swift */,
+				4DD30B6D277145FC0000C23E /* SignInViewController.swift */,
+				4D3D6D30277401C00086B1DF /* User.swift */,
+				4D96131F277202C6008AF4A9 /* UsersListViewController.swift */,
 				4D95FE8B276FB31D00BE4A18 /* Assets.xcassets */,
 				4D95FEB2276FB60F00BE4A18 /* GoogleService-Info.plist */,
 				4D3D6D2E2773CB210086B1DF /* AuthModel.swift */,
@@ -435,16 +435,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D95FEBF276FC9EB00BE4A18 /* SigninViewController.swift in Sources */,
+				4D95FEBF276FC9EB00BE4A18 /* SignUpViewController.swift in Sources */,
 				4D3D6D2F2773CB210086B1DF /* AuthModel.swift in Sources */,
 				4D95FEBD276FC9D500BE4A18 /* AuthViewController.swift in Sources */,
-				4D961320277202C6008AF4A9 /* Page2ViewController.swift in Sources */,
+				4D961320277202C6008AF4A9 /* UsersListViewController.swift in Sources */,
 				4D95FE87276FB31B00BE4A18 /* ViewController.swift in Sources */,
 				4D95FE83276FB31B00BE4A18 /* AppDelegate.swift in Sources */,
 				4D95FE85276FB31B00BE4A18 /* SceneDelegate.swift in Sources */,
-				4D95FEC3276FCA2500BE4A18 /* PageViewController.swift in Sources */,
 				4D3D6D2C2773ABA30086B1DF /* MailTableViewCell.swift in Sources */,
-				4DD30B6E277145FC0000C23E /* login2ViewController.swift in Sources */,
+				4DD30B6E277145FC0000C23E /* SignInViewController.swift in Sources */,
+				4D3D6D31277401C00086B1DF /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

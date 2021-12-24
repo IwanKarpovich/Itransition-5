@@ -8,18 +8,14 @@
 import UIKit
 import Firebase
 
-class login2ViewController: UIViewController {
+class SignInViewController: UIViewController {
     
     
-    @IBOutlet weak var log: UITextField!
-    
-    @IBOutlet weak var pas: UITextField!
-    
-    @IBOutlet weak var butt: UIButton!
-    
-    
+    @IBOutlet weak var login: UITextField!
+    @IBOutlet weak var password: UITextField!
+    @IBOutlet weak var button: UIButton!
     @IBOutlet weak var ErrorLabel: UILabel!
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
         ErrorLabel.alpha = 0
@@ -27,40 +23,31 @@ class login2ViewController: UIViewController {
     }
     
     @IBAction func loggin(_ sender: Any) {
-        let var1 = log.text!
-        let var2 = pas.text!
-        Auth.auth().signIn(withEmail: log.text!, password: pas.text!) { [self]
+        Auth.auth().signIn(withEmail: login.text!, password: password.text!) { [self]
             (result, error) in
-            if error != nil { print(" Andrei")
+            if error != nil {
                 ErrorLabel.alpha = 1
                 self.ErrorLabel.text = ("Error")
             } else {
                 let date = Date()
                 let formatter = DateFormatter()
                 formatter.dateFormat = "dd.MM.yyyy.HH.mm.ss"
-                let signIn = formatter.string(from: date)
+                let signInTimestamp = formatter.string(from: date)
                 let settings = FirestoreSettings()
                 Firestore.firestore().settings = settings
                 let db = Firestore.firestore()
-                
-                
-                let mas = result!.user.uid
-                
-                
-                
-                
-                db.collection("users").whereField("uid", isEqualTo: result!.user.uid)
+
+                db.collection("users").whereField("authId", isEqualTo: result!.user.uid)
                     .getDocuments() { (querySnapshot, err) in
                         if let err = err {
                             print("Error getting documents: \(err)")
                         } else {
                             for document in querySnapshot!.documents {
-                                Singleton.userAuthID =  document.get("uid") as! String
+                                AuthModel.userAuthID =  document.get("authId") as! String
                                 
-                                print("\(document.documentID) => \(document.data())")
-                                let washingtonRef = db.collection("users").document(document.documentID)
-                                washingtonRef.updateData([
-                                    "loginTime" : signIn
+                                let userDocument = db.collection("users").document(document.documentID)
+                                userDocument.updateData([
+                                    "lastLoginTime" : signInTimestamp
                                 ]) { err in
                                     if let err = err {
                                         print("Error updating document: \(err)")
@@ -68,33 +55,19 @@ class login2ViewController: UIViewController {
                                         print("Document successfully updated")
                                     }
                                 }
-                                print("next")
+                                
                                 ErrorLabel.alpha = 1
                                 self.ErrorLabel.text = ("Nice")
-                                if document.get("status") as! String == ("unblock")
-                                {let viewController = storyboard?.instantiateViewController(withIdentifier: "menu") as! UIViewController
-                                self.present(viewController, animated: true)
+                                if document.get("status") as! String == ("unblock") {
+                                    let viewController = storyboard?.instantiateViewController(withIdentifier: "menu")
+                                    self.present(viewController!, animated: true)
                                     self.ErrorLabel.text = ("Nice")
                                 }
                                 self.ErrorLabel.text = ("You are blocked")
                             }
-                            }
-            
+                        }
                     }
-                
-                
-                
-                
-                
             }
-            print(" aff ")
-            
         }
-        
-        
     }
-    
-    
-    
-    
 }

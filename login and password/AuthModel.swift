@@ -8,15 +8,10 @@
 import Foundation
 
 
-class Singleton {
+class AuthModel {
 
     static var userAuthID = ""
 
     private init() {}
 
- 
-    func someBusinessLogic() -> String {
-        // ...
-        return "Result of the 'someBusinessLogic' call"
-    }
 }
